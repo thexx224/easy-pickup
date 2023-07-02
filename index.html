@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>还叫BlueBell</title>
+</head>
+<body>
+<form rel='uploadForm'
+      id='uploadForm'
+      action='http://localhost:5280/upload'
+      method='post'
+      encType="multipart/form-data">
+    <input type="file" name="file"/>
+    <br/>
+    <br/>
+    <label>选择工作日:</label><br/>
+    <input type="checkbox" id="monday" name="workdays" value="星期一" checked="checked">
+    <label for="monday">星期一</label><br/>
+    <input type="checkbox" id="tuesday" name="workdays" value="星期二" checked="checked">
+    <label for="tuesday">星期二</label><br/>
+    <input type="checkbox" id="wednesday" name="workdays" value="星期三" checked="checked">
+    <label for="wednesday">星期三</label><br/>
+    <input type="checkbox" id="thursday" name="workdays" value="星期四" checked="checked">
+    <label for="thursday">星期四</label><br/>
+    <input type="checkbox" id="friday" name="workdays" value="星期五" checked="checked">
+    <label for="friday">星期五</label><br/>
+    <input type="checkbox" id="saturday" name="workdays" value="星期六">
+    <label for="saturday">星期六</label><br/>
+    <input type="checkbox" id="sunday" name="workdays" value="星期日">
+    <label for="sunday">星期日</label><br/>
+    <br/>
+    <input type='submit' value='生成!'/>
+</form>
+</body>
+</html>
